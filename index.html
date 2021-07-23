@@ -15,7 +15,7 @@
 <body>
     <!-- header start -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="images/logo.png" alt="">
@@ -28,23 +28,23 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#Home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Shoes</a>
+                            <a class="nav-link" href="#Shoes">Shoes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Backpack</a>
+                            <a class="nav-link" href="#Backpack">Backpack</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Subscribe</a>
+                            <a class="nav-link" href="#Subscribe">Subscribe</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Image slider -->
-        <section class="container mt-5 ">
+        <section class="container mt-5 " id="Home">
             <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
                 <div class="carousel-inner rounded-3">
                     <div class="carousel-item active">
@@ -158,7 +158,7 @@
         <!-- shoes card added -->
 
         <section class="container mt-5">
-            <h2>Shoes</h2>
+            <h2 id="Shoes">Shoes</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
                     <div class="card border-0 shadow-lg h-100">
@@ -206,8 +206,8 @@
             </div>
         </section>
         <!-- Backpack card added -->
-        <section class="container mt-5">
-            <h2>Backpack</h2>
+        <section class="container my-5">
+            <h2 id="Backpack">Backpack</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
                     <div class="card border-0 shadow-lg h-100">
@@ -259,10 +259,22 @@
                 </div>
             </div>
         </section>
+        <!-- Subscribe section added -->
+        <section style="height: 300px;"
+            class="container bg-color d-flex justify-content-center align-items-center rounded-3" id="Subscribe">
+            <div>
+                <h1>LET'S STAY IN TOUCH</h1>
+                <h6 class="text-muted">Get updates on sales, specials and more</h6>
+                <input type="text" name="" placeholder="Enter your email" id="" class="border-0"
+                    style="width: 300px; height: 40px;">
+                <br>
+                <button class="btn btn-danger">SUBMIT</button>
+            </div>
+        </section>
     </main>
 
-    <footer>
-
+    <footer class="mt-5 text-center">
+        <p><small>©2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small></p>
     </footer>
 
     <!-- Bootstrap JavaScript added -->
