@@ -21,3 +21,20 @@ for (const btn of removeBtn) {
         event.target.parentNode.removeChild(event.target);
     })
 }
+
+//email-input, submit-btn, disabled
+// input @email then enable submit btn.
+const emailImput = document.getElementById("email-input");
+
+emailImput.addEventListener("keyup", function (event) {
+    const submitBtn = document.getElementById("submit-btn");
+    if (event.target.value == "@email") {
+        submitBtn.removeAttribute("disabled");
+    }
+    else {
+        submitBtn.setAttribute("disabled", true)
+    }
+})
+emailImput.addEventListener("change", function (event) {
+    console.log(event.target);
+})
