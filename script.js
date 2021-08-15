@@ -23,7 +23,7 @@ for (const btn of removeBtn) {
 }
 
 //email-input, submit-btn, disabled
-// input @email then enable submit btn.
+// input @email then enable submit btn. 7
 const emailImput = document.getElementById("email-input");
 
 emailImput.addEventListener("keyup", function (event) {
@@ -37,4 +37,27 @@ emailImput.addEventListener("keyup", function (event) {
 })
 emailImput.addEventListener("change", function (event) {
     console.log(event.target);
+});
+
+//Enter mouse on bag 2 and change image and out mouse on bag to and change bag again. 8
+function changeImg() {
+    const changeImg = document.getElementById("img2");
+    changeImg.src = "images/bags/bag-1.png";
+};
+function reChangeImg() {
+    document.getElementById("img2").src = "images/bags/bag-2.png"
+}
+
+//bubble and stopPropagetion add. 9
+const notClick = document.getElementsByClassName("no-click");
+for (const element of notClick) {
+    element.addEventListener("click", function (event) {
+
+        event.stopPropagation()
+    })
+}
+
+document.getElementById("Subscribe").addEventListener("click", function () {
+    document.getElementById("Subscribe").style.backgroundColor = "hotpink"
+
 })

@@ -227,7 +227,8 @@
                 </div>
                 <div class="col">
                     <div class="card border-0 shadow-lg h-100">
-                        <img src="images/bags/bag-2.png" class="card-img-top" alt="...">
+                        <img src="images/bags/bag-2.png" onmouseenter="changeImg()" onmouseout="reChangeImg()"
+                            class="card-img-top" id="img2" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Blue Niltu Bag</h5>
                             <h5>$320</h5>
@@ -264,12 +265,12 @@
         <section style="height: 300px;"
             class="container bg-color d-flex justify-content-center align-items-center rounded-3" id="Subscribe">
             <div>
-                <h1>LET'S STAY IN TOUCH</h1>
-                <h6 class="text-muted">Get updates on sales, specials and more</h6>
+                <h1 class="no-click">LET'S STAY IN TOUCH</h1>
+                <h6 class="text-muted no-click">Get updates on sales, specials and more</h6>
                 <input type="text" name="" placeholder="Enter your email" id="email-input"
-                    class="border-0 form-control">
+                    class="border-0 form-control no-click">
                 <br>
-                <button id="submit-btn" class="panda-btn" disabled>SUBMIT</button>
+                <button id="submit-btn" class="panda-btn no-click" disabled>SUBMIT</button>
             </div>
         </section>
     </main>
@@ -284,10 +285,7 @@
         crossorigin="anonymous"></script>
     <!-- coustom js link add. -->
     <script src="script.js"></script>
-    <script>
 
-
-    </script>
 </body>
 
 </html>
